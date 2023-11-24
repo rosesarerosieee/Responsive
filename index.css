@@ -1,0 +1,1281 @@
+:root{
+    --color1: black;
+    --color2: rgb(30,55,115);
+    background: linear-gradient(90deg, rgba(30,55,115,1) 18%, rgba(24,52,117,1) 52%, rgba(15,42,96,1) 91%);
+    --color3: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar{
+    position: fixed;
+    background: rgb(11,40,111);
+    background: linear-gradient(90deg, rgba(11,40,111,1) 15%, rgba(12,32,79,1) 47%, rgba(7,34,89,1) 91%);
+    width: 100%;
+    height: 14vh;
+    text-align: right;
+    top: 0;
+    z-index: 1;
+}
+.navbar li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar a{
+    position: relative;
+    text-decoration: none;
+    
+    right: 40px;
+    margin: 20px;
+    top: 40px;
+    color: cyan;
+    font-size: 17px;
+}
+
+.navbar a:hover{
+    color: lightpink;
+}
+
+.introduction{
+    position: relative;
+    background-color: var(--color1);
+    top: 100px;
+    text-align: center;
+    width: 100%;
+    height: 98vh;
+    top: 0;
+}
+.greet, .ps{
+    position: relative;
+    top: 250px;
+    color: white;
+    margin: 20px;
+}
+
+.profile{
+    background: rgb(29,83,210);
+    background: linear-gradient(90deg, rgba(29,83,210,1) 17%, rgba(47,86,177,1) 52%, rgba(26,85,204,1) 91%);
+    height: 150vh;
+    width: 100%;
+}
+.name, .born,.aboutt    {
+    position: relative;
+    top: 100px;
+    margin-left: 40px;
+    font-size: 2rem;
+}
+
+.skills{
+    position: relative;
+    top: 120px;
+    margin-left: 40px;
+}
+
+.profile p{
+    margin-left: 40px;
+}
+.skills1{
+    position: relative;
+    top:130px;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 4px;
+}
+
+.bar{
+    position: relative;
+    top:95px;
+    left:150px;
+    width: 20%;
+    height: 30px;
+    border: 5px solid black;
+    border-radius: 60px;
+
+}
+.progress{
+    background-color: cyan;
+  text-align: center;
+  height: 21px;
+  width: 70%;
+  border-radius: 60px;
+}
+
+.bar1{
+    position: relative;
+    top:95px;
+    left:190px;
+    width: 20%;
+    height: 30px;
+    border: 5px solid black;
+    border-radius: 60px;
+
+}
+.progress1{
+    background-color: cyan;
+  text-align: center;
+  height: 21px;
+  width: 40%;
+  border-radius: 60px;
+}
+
+.bar2{
+    position: relative;
+    top:95px;
+    left:270px;
+    width: 20%;
+    height: 30px;
+    border: 5px solid black;
+    border-radius: 60px;
+
+}
+.progress2{
+    background-color: cyan;
+  text-align: center;
+  height: 21px;
+  width: 70%;
+  border-radius: 60px;
+}
+.images{
+    position: relative;
+    top: 0;
+  }
+  
+  .images img {
+    position: absolute;
+    bottom: -150px;
+    right: 150px;
+    height: 70vh;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .images img.active {
+    opacity: 1;
+  }
+  
+
+.aboutme{
+    background-color: var(--color2);
+    height: 140vh;
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+
+}
+
+.aboutme h1{
+    position: relative;
+    top: 250px;
+    color: var(--color3)
+}
+.aboutme a{
+    color: #00d084;
+}
+
+.aboutme a:hover{
+    color: green;
+}
+
+
+.socials{
+    position: relative;
+    background-color: blue;
+    bottom: 0;
+    width: 100%;
+    height: 12vh;
+    font-size: 1rem;
+}
+
+.icons{
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+    top: 30px;
+}
+
+.icons a{
+    color: black;
+    margin: 12px;
+}
+
+.icons a:hover{
+    color: cyan;
+}
+
+
+
+/*iphone*/
+@media (min-width: 320px) and (max-width:480px) {
+    :root{
+        --color1: black;
+        --color2: rgb(30,55,115);
+        background: linear-gradient(90deg, rgba(30,55,115,1) 18%, rgba(24,52,117,1) 52%, rgba(15,42,96,1) 91%);
+        --color3: black;
+    }
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .navbar{
+        position: fixed;
+        background: rgb(11,40,111);
+        background: linear-gradient(90deg, rgba(11,40,111,1) 15%, rgba(12,32,79,1) 47%, rgba(7,34,89,1) 91%);
+        width: 100%;
+        height: 12vh;
+        text-align: right;
+        top: 0;
+        z-index: 1;
+    }
+    .navbar li{
+        list-style: none;
+        display: inline-block;
+    }
+    .navbar a{
+        position: relative;
+        text-decoration: none;
+        right: 0px;
+        margin: 10px;
+        top: 41px;
+        color: cyan;
+        font-size: 16px;
+    }
+    
+    .navbar a:hover{
+        color: lightpink;
+    }
+    
+    .introduction{
+        position: relative;
+        background-color: var(--color1);
+        top: 50px;
+        text-align: center;
+        width: 100%;
+        height: 120vh;
+        top: 0;
+        font-size: 16px;
+    }
+    .greet, .ps{
+        position: relative;
+        top: 250px;
+        color: white;
+        margin: 20px;
+    }
+    
+    .profile{
+        background: rgb(29,83,210);
+        background: linear-gradient(90deg, rgba(29,83,210,1) 17%, rgba(47,86,177,1) 52%, rgba(26,85,204,1) 91%);
+        height: 160vh;
+        width: 100%;
+        text-align: center;
+    }
+    .name, .born,.aboutt    {
+        position: relative;
+        top: 100px;
+        font-size: 1.88rem;
+    }
+    
+    .skills{
+        position: relative;
+        top: 120px;
+    }
+    
+
+    .skills1{
+        position: relative;
+        top:130px;
+        font-weight: bold;
+        font-size: 2rem;
+        margin: 4px;
+    }
+    
+    .bar{
+        position: relative;
+        top:133px;
+        left:120px;
+        width: 50%;
+        height: 30px;
+        border: 5px solid black;
+        border-radius: 60px;
+    
+    }
+    .progress{
+        background-color: cyan;
+      text-align: center;
+      height: 21px;
+      width: 70%;
+      border-radius: 60px;
+    }
+    
+    .bar1{
+        position: relative;
+        top:133px;
+        left:120px;
+        width: 50%;
+        height: 30px;
+        border: 5px solid black;
+        border-radius: 60px;
+    
+    }
+    .progress1{
+        background-color: cyan;
+      text-align: center;
+      height: 21px;
+      width: 40%;
+      border-radius: 60px;
+    }
+    
+    .bar2{
+        position: relative;
+        top:133px;
+        left:120px;
+        width: 50%;
+        height: 30px;
+        border: 5px solid black;
+        border-radius: 60px;
+    
+    }
+    .progress2{
+        background-color: cyan;
+      text-align: center;
+      height: 21px;
+      width: 70%;
+      border-radius: 60px;
+    }
+    .images{
+        position: relative;
+        top: 0;
+      }
+      
+      .images img {
+        position: absolute;
+        bottom: -550px;
+        right: 20px;
+        width: 350px;
+        height: 40vh;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+      
+      .images img.active {
+        opacity: 1;
+      }
+      
+    
+    .aboutme{
+        background-color: var(--color2);
+        height: 150vh;
+        text-align: center;
+        width: 100%;
+        font-size: 1rem;
+    
+    }
+    
+    .aboutme h1{
+        position: relative;
+        top: 250px;
+        color: var(--color3)
+    }
+    .aboutme a{
+        color: #00d084;
+    }
+    
+    .aboutme a:hover{
+        color: green;
+    }
+    
+    
+    .socials{
+        position: relative;
+        background-color: blue;
+        bottom: 0;
+        width: 100%;
+        height: 12vh;
+        font-size: 1rem;
+    }
+    
+    .icons{
+        position: relative;
+        text-align: center;
+        font-size: 2rem;
+        top: 30px;
+    }
+    
+    .icons a{
+        color: black;
+        margin: 12px;
+    }
+    
+    .icons a:hover{
+        color: cyan;
+    }
+    
+}
+
+/*tablet*/
+@media(min-width: 481px) and (max-width: 768px){
+        :root{
+            --color1: black;
+            --color2: rgb(30,55,115);
+            background: linear-gradient(90deg, rgba(30,55,115,1) 18%, rgba(24,52,117,1) 52%, rgba(15,42,96,1) 91%);
+            --color3: black;
+        }
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        .navbar{
+            position: fixed;
+            background: rgb(11,40,111);
+            background: linear-gradient(90deg, rgba(11,40,111,1) 15%, rgba(12,32,79,1) 47%, rgba(7,34,89,1) 91%);
+            width: 100%;
+            height: 13vh;
+            text-align: center;
+            top: 0;
+            z-index: 1;
+        }
+        .navbar li{
+            list-style: none;
+            display: inline-block;
+        }
+        .navbar a{
+            position: relative;
+            text-decoration: none;
+            margin: 10px;
+            top: 45px;
+            color: cyan;
+            font-size: 20px;
+            left:20px;
+        }
+        
+        .navbar a:hover{
+            color: lightpink;
+        }
+        
+        .introduction{
+            position: relative;
+            background-color: var(--color1);
+            top: 50px;
+            text-align: center;
+            width: 100%;
+            height: 98vh;
+            top: 0;
+            font-size: 20px;
+        }
+        .greet, .ps{
+            position: relative;
+            top: 350px;
+            color: white;
+            margin: 20px;
+        }
+        
+        .profile{
+            background: rgb(29,83,210);
+            background: linear-gradient(90deg, rgba(29,83,210,1) 17%, rgba(47,86,177,1) 52%, rgba(26,85,204,1) 91%);
+            height: 150vh;
+            width: 100%;
+            text-align: center;
+        }
+        .name, .born,.aboutt    {
+            position: relative;
+            top: 100px;
+            font-size: 2.5rem;
+        }
+        
+        .skills{
+            position: relative;
+            top: 120px;
+            font-size: 3rem;
+        }
+        
+    
+        .skills1{
+            position: relative;
+            top:130px;
+            font-weight: bold;
+            font-size: 2rem;
+            margin: 4px;
+        }
+        
+        .bar{
+            position: relative;
+            top:133px;
+            left:230px;
+            width: 40%;
+            height: 30px;
+            border: 5px solid black;
+            border-radius: 60px;
+        
+        }
+        .progress{
+            background-color: cyan;
+          text-align: center;
+          height: 21px;
+          width: 70%;
+          border-radius: 60px;
+        }
+        
+        .bar1{
+            position: relative;
+            top:133px;
+            left:230px;
+            width: 40%;
+            height: 30px;
+            border: 5px solid black;
+            border-radius: 60px;
+        
+        }
+        .progress1{
+            background-color: cyan;
+          text-align: center;
+          height: 21px;
+          width: 40%;
+          border-radius: 60px;
+        }
+        
+        .bar2{
+            position: relative;
+            top:133px;
+            left:230px;
+            width: 40%;
+            height: 30px;
+            border: 5px solid black;
+            border-radius: 60px;
+        
+        }
+        .progress2{
+            background-color: cyan;
+          text-align: center;
+          height: 21px;
+          width: 70%;
+          border-radius: 60px;
+        }
+        .images{
+            position: relative;
+            top: 0;
+          }
+          
+          .images img {
+            position: absolute;
+            bottom: -750px;
+            right: 170px;
+            width: 450px;
+            height: 50vh;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+          }
+          
+          .images img.active {
+            opacity: 1;
+          }
+          
+        
+        .aboutme{
+            background-color: var(--color2);
+            height: 140vh;
+            text-align: center;
+            width: 100%;
+            font-size: 1rem;
+        
+        }
+        
+        .aboutme h1{
+            position: relative;
+            top: 250px;
+            color: var(--color3)
+        }
+        .aboutme a{
+            color: #00d084;
+        }
+        
+        .aboutme a:hover{
+            color: green;
+        }
+        
+        
+        .socials{
+            position: relative;
+            background-color: blue;
+            bottom: 0;
+            width: 100%;
+            height: 12vh;
+            font-size: 1rem;
+        }
+        
+        .icons{
+            position: relative;
+            text-align: center;
+            font-size: 2rem;
+            top: 30px;
+        }
+        
+        .icons a{
+            color: black;
+            margin: 12px;
+        }
+        
+        .icons a:hover{
+            color: cyan;
+        }
+        
+    
+}
+
+@media(min-width: 769px) and (max-width: 1024px){
+        :root{
+            --color1: black;
+            --color2: rgb(30,55,115);
+            background: linear-gradient(90deg, rgba(30,55,115,1) 18%, rgba(24,52,117,1) 52%, rgba(15,42,96,1) 91%);
+            --color3: black;
+        }
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        .navbar{
+            position: fixed;
+            background: rgb(11,40,111);
+            background: linear-gradient(90deg, rgba(11,40,111,1) 15%, rgba(12,32,79,1) 47%, rgba(7,34,89,1) 91%);
+            width: 100%;
+            height: 13vh;
+            text-align: center;
+            top: 0;
+            z-index: 1;
+        }
+        .navbar li{
+            list-style: none;
+            display: inline-block;
+        }
+        .navbar a{
+            position: relative;
+            text-decoration: none;
+            margin: 10px;
+            top: 55px;
+            color: cyan;
+            font-size: 25px;
+            left:20px;
+        }
+        
+        .navbar a:hover{
+            color: lightpink;
+        }
+        
+        .introduction{
+            position: relative;
+            background-color: var(--color1);
+            top: 50px;
+            text-align: center;
+            width: 100%;
+            height: 98vh;
+            top: 0;
+            font-size: 20px;
+        }
+        .greet, .ps{
+            position: relative;
+            top: 350px;
+            color: white;
+            margin: 20px;
+        }
+        
+        .profile{
+            background: rgb(29,83,210);
+            background: linear-gradient(90deg, rgba(29,83,210,1) 17%, rgba(47,86,177,1) 52%, rgba(26,85,204,1) 91%);
+            height: 150vh;
+            width: 100%;
+            text-align: center;
+        }
+        .name, .born,.aboutt    {
+            position: relative;
+            top: 100px;
+            font-size: 2.5rem;
+        }
+        
+        .skills{
+            position: relative;
+            top: 120px;
+            font-size: 3rem;
+        }
+        
+    
+        .skills1{
+            position: relative;
+            top:130px;
+            font-weight: bold;
+            font-size: 2rem;
+            margin: 4px;
+        }
+        
+        .bar{
+            position: relative;
+            top:133px;
+            left:230px;
+            width: 40%;
+            height: 30px;
+            border: 5px solid black;
+            border-radius: 60px;
+        
+        }
+        .progress{
+            background-color: cyan;
+          text-align: center;
+          height: 21px;
+          width: 70%;
+          border-radius: 60px;
+        }
+        
+        .bar1{
+            position: relative;
+            top:133px;
+            left:230px;
+            width: 40%;
+            height: 30px;
+            border: 5px solid black;
+            border-radius: 60px;
+        
+        }
+        .progress1{
+            background-color: cyan;
+          text-align: center;
+          height: 21px;
+          width: 40%;
+          border-radius: 60px;
+        }
+        
+        .bar2{
+            position: relative;
+            top:133px;
+            left:230px;
+            width: 40%;
+            height: 30px;
+            border: 5px solid black;
+            border-radius: 60px;
+        
+        }
+        .progress2{
+            background-color: cyan;
+          text-align: center;
+          height: 21px;
+          width: 70%;
+          border-radius: 60px;
+        }
+        .images{
+            position: relative;
+            top: 0;
+          }
+          
+          .images img {
+            position: absolute;
+            bottom: -850px;
+            right: 170px;
+            width: 450px;
+            height: 50vh;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+          }
+          
+          .images img.active {
+            opacity: 1;
+          }
+          
+        
+        .aboutme{
+            background-color: var(--color2);
+            height: 140vh;
+            text-align: center;
+            width: 100%;
+            font-size: 1rem;
+        
+        }
+        
+        .aboutme h1{
+            position: relative;
+            top: 250px;
+            color: var(--color3)
+        }
+        .aboutme a{
+            color: #00d084;
+        }
+        
+        .aboutme a:hover{
+            color: green;
+        }
+        
+        
+        .socials{
+            position: relative;
+            background-color: blue;
+            bottom: 0;
+            width: 100%;
+            height: 12vh;
+            font-size: 1rem;
+        }
+        
+        .icons{
+            position: relative;
+            text-align: center;
+            font-size: 2rem;
+            top: 30px;
+        }
+        
+        .icons a{
+            color: black;
+            margin: 12px;
+        }
+        
+        .icons a:hover{
+            color: cyan;
+        }
+        
+    
+
+}
+
+@media (min-width: 1025px) and (max-width: 1200px){
+    :root{
+        --color1: black;
+        --color2: rgb(30,55,115);
+        background: linear-gradient(90deg, rgba(30,55,115,1) 18%, rgba(24,52,117,1) 52%, rgba(15,42,96,1) 91%);
+        --color3: black;
+    }
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .navbar{
+        position: fixed;
+        background: rgb(11,40,111);
+        background: linear-gradient(90deg, rgba(11,40,111,1) 15%, rgba(12,32,79,1) 47%, rgba(7,34,89,1) 91%);
+        width: 100%;
+        height: 14vh;
+        text-align: right;
+        top: 0;
+        z-index: 1;
+    }
+    .navbar li{
+        list-style: none;
+        display: inline-block;
+    }
+    .navbar a{
+        position: relative;
+        text-decoration: none;
+        
+        right: 40px;
+        margin: 20px;
+        top: 40px;
+        color: cyan;
+        font-size: 17px;
+    }
+    
+    .navbar a:hover{
+        color: lightpink;
+    }
+    
+    .introduction{
+        position: relative;
+        background-color: var(--color1);
+        top: 100px;
+        text-align: center;
+        width: 100%;
+        height: 98vh;
+        top: 0;
+    }
+    .greet, .ps{
+        position: relative;
+        top: 250px;
+        color: white;
+        margin: 20px;
+    }
+    
+    .profile{
+        background: rgb(29,83,210);
+        background: linear-gradient(90deg, rgba(29,83,210,1) 17%, rgba(47,86,177,1) 52%, rgba(26,85,204,1) 91%);
+        height: 150vh;
+        width: 100%;
+    }
+    .name, .born,.aboutt    {
+        position: relative;
+        top: 100px;
+        margin-left: 40px;
+        font-size: 2rem;
+    }
+    
+    .skills{
+        position: relative;
+        top: 120px;
+        margin-left: 40px;
+    }
+    
+    .profile p{
+        margin-left: 40px;
+    }
+    .skills1{
+        position: relative;
+        top:130px;
+        font-weight: bold;
+        font-size: 2rem;
+        margin: 4px;
+    }
+    
+    .bar{
+        position: relative;
+        top:95px;
+        left:150px;
+        width: 20%;
+        height: 30px;
+        border: 5px solid black;
+        border-radius: 60px;
+    
+    }
+    .progress{
+        background-color: cyan;
+      text-align: center;
+      height: 21px;
+      width: 70%;
+      border-radius: 60px;
+    }
+    
+    .bar1{
+        position: relative;
+        top:95px;
+        left:190px;
+        width: 20%;
+        height: 30px;
+        border: 5px solid black;
+        border-radius: 60px;
+    
+    }
+    .progress1{
+        background-color: cyan;
+      text-align: center;
+      height: 21px;
+      width: 40%;
+      border-radius: 60px;
+    }
+    
+    .bar2{
+        position: relative;
+        top:95px;
+        left:270px;
+        width: 20%;
+        height: 30px;
+        border: 5px solid black;
+        border-radius: 60px;
+    
+    }
+    .progress2{
+        background-color: cyan;
+      text-align: center;
+      height: 21px;
+      width: 70%;
+      border-radius: 60px;
+    }
+    .images{
+        position: relative;
+        top: 0;
+      }
+      
+      .images img {
+        position: absolute;
+        bottom: -150px;
+        right: 150px;
+        height: 70vh;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+      
+      .images img.active {
+        opacity: 1;
+      }
+      
+    
+    .aboutme{
+        background-color: var(--color2);
+        height: 140vh;
+        text-align: center;
+        width: 100%;
+        font-size: 1rem;
+    
+    }
+    
+    .aboutme h1{
+        position: relative;
+        top: 250px;
+        color: var(--color3)
+    }
+    .aboutme a{
+        color: #00d084;
+    }
+    
+    .aboutme a:hover{
+        color: green;
+    }
+    
+    
+    .socials{
+        position: relative;
+        background-color: blue;
+        bottom: 0;
+        width: 100%;
+        height: 12vh;
+        font-size: 1rem;
+    }
+    
+    .icons{
+        position: relative;
+        text-align: center;
+        font-size: 2rem;
+        top: 30px;
+    }
+    
+    .icons a{
+        color: black;
+        margin: 12px;
+    }
+    
+    .icons a:hover{
+        color: cyan;
+    }
+    
+}
+
+@media (min-width: 1201px){
+    :root{
+        --color1: black;
+        --color2: rgb(30,55,115);
+        background: linear-gradient(90deg, rgba(30,55,115,1) 18%, rgba(24,52,117,1) 52%, rgba(15,42,96,1) 91%);
+        --color3: black;
+    }
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .navbar{
+        position: fixed;
+        background: rgb(11,40,111);
+        background: linear-gradient(90deg, rgba(11,40,111,1) 15%, rgba(12,32,79,1) 47%, rgba(7,34,89,1) 91%);
+        width: 100%;
+        height: 14vh;
+        text-align: right;
+        top: 0;
+        z-index: 1;
+    }
+    .navbar li{
+        list-style: none;
+        display: inline-block;
+    }
+    .navbar a{
+        position: relative;
+        text-decoration: none;
+        
+        right: 40px;
+        margin: 20px;
+        top: 40px;
+        color: cyan;
+        font-size: 17px;
+    }
+    
+    .navbar a:hover{
+        color: lightpink;
+    }
+    
+    .introduction{
+        position: relative;
+        background-color: var(--color1);
+        top: 100px;
+        text-align: center;
+        width: 100%;
+        height: 98vh;
+        top: 0;
+    }
+    .greet, .ps{
+        position: relative;
+        top: 250px;
+        color: white;
+        margin: 20px;
+    }
+    
+    .profile{
+        background: rgb(29,83,210);
+        background: linear-gradient(90deg, rgba(29,83,210,1) 17%, rgba(47,86,177,1) 52%, rgba(26,85,204,1) 91%);
+        height: 150vh;
+        width: 100%;
+    }
+    .name, .born,.aboutt    {
+        position: relative;
+        top: 100px;
+        margin-left: 40px;
+        font-size: 2rem;
+    }
+    
+    .skills{
+        position: relative;
+        top: 120px;
+        margin-left: 40px;
+    }
+    
+    .profile p{
+        margin-left: 40px;
+    }
+    .skills1{
+        position: relative;
+        top:130px;
+        font-weight: bold;
+        font-size: 2rem;
+        margin: 4px;
+    }
+    
+    .bar{
+        position: relative;
+        top:95px;
+        left:150px;
+        width: 20%;
+        height: 30px;
+        border: 5px solid black;
+        border-radius: 60px;
+    
+    }
+    .progress{
+        background-color: cyan;
+      text-align: center;
+      height: 21px;
+      width: 70%;
+      border-radius: 60px;
+    }
+    
+    .bar1{
+        position: relative;
+        top:95px;
+        left:190px;
+        width: 20%;
+        height: 30px;
+        border: 5px solid black;
+        border-radius: 60px;
+    
+    }
+    .progress1{
+        background-color: cyan;
+      text-align: center;
+      height: 21px;
+      width: 40%;
+      border-radius: 60px;
+    }
+    
+    .bar2{
+        position: relative;
+        top:95px;
+        left:270px;
+        width: 20%;
+        height: 30px;
+        border: 5px solid black;
+        border-radius: 60px;
+    
+    }
+    .progress2{
+        background-color: cyan;
+      text-align: center;
+      height: 21px;
+      width: 70%;
+      border-radius: 60px;
+    }
+    .images{
+        position: relative;
+        top: 0;
+      }
+      
+      .images img {
+        position: absolute;
+        bottom: -150px;
+        right: 150px;
+        height: 70vh;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+      
+      .images img.active {
+        opacity: 1;
+      }
+      
+    
+    .aboutme{
+        background-color: var(--color2);
+        height: 140vh;
+        text-align: center;
+        width: 100%;
+        font-size: 1rem;
+    
+    }
+    
+    .aboutme h1{
+        position: relative;
+        top: 250px;
+        color: var(--color3)
+    }
+    .aboutme a{
+        color: #00d084;
+    }
+    
+    .aboutme a:hover{
+        color: green;
+    }
+    
+    
+    .socials{
+        position: relative;
+        background-color: blue;
+        bottom: 0;
+        width: 100%;
+        height: 12vh;
+        font-size: 1rem;
+    }
+    
+    .icons{
+        position: relative;
+        text-align: center;
+        font-size: 2rem;
+        top: 30px;
+    }
+    
+    .icons a{
+        color: black;
+        margin: 12px;
+    }
+    
+    .icons a:hover{
+        color: cyan;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
